@@ -5,3 +5,4 @@
 
 1. How to write shell script files
 2. Printing
+3. Variables
