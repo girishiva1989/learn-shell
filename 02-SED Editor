@@ -1,0 +1,17 @@
+##What SED editor can do
+## -e is used, so that we can use multiple operations (sed -i -e '5d' -e '/nologin/ d' passwd)
+
+Lines
+1.Delete some lines
+ - Delete based on line number = sed -e '1d' /etc/passwd/ or sed -i -e '5d' passwd
+ (Will not provide the out put)
+ - Delete based on strings = sed -i -e '/nologin/ d' passwd
+2.Add some lines
+ - Add based on line number = sed -i -e '1 a Hello' -e '/mangod/ a Hello World' passwd
+3.Modify(Change) some lines
+ - Change a line = sed -i -e '2 c Hello Universe' -e '/centos/ c Hello Galixy' passwd
+
+Words
+1.Delete some words
+ - sed -i -e 's|bin|BIN|' passwd
+2.Modify(Substitute) some words
