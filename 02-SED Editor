@@ -13,5 +13,8 @@ Lines
 
 Words
 1.Delete some words
- - sed -i -e 's|bin|BIN|' passwd
+ - sed -i -e 's|bin||g' passwd
+ ## g will replace all the instances of bin
+ ## an give number instead of 'g' to delete the exact instance
 2.Modify(Substitute) some words
+- sed -i -e 's|bin|BIN|g' passwd
