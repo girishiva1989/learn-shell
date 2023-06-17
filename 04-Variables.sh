@@ -11,3 +11,9 @@ echo Today date is ${DATE}
 
 ARTH=${{2-3*4/2}}
 echo ARTH = ${ARTH}
+
+#to source the file
+source file_name
+
+#to know the path
+dirname $0
