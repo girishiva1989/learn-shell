@@ -15,5 +15,12 @@ echo ARTH = ${ARTH}
 #to source the file
 source file_name
 
-#to know the path
+#to know the path and script name
 dirname $0
+
+#Speial Arguments
+echo script name - $0
+echo first argument - $1
+echo second argument - $2
+echo all arguments - $*
+echo number of arguments - $#
