@@ -24,3 +24,5 @@ echo first argument - $1
 echo second argument - $2
 echo all arguments - $*
 echo number of arguments - $#
+
+#If the input is not given, our script should fail and it should be designed like that
