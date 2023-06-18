@@ -10,6 +10,7 @@ function_name() {
 function_name
 
 # We can inputs the function and we can access them with special variables $1-$n, $*, $#
+# While calling the function, we will dynamialy pass the arguments
 
 function_name1(){
   echo function one = $1
