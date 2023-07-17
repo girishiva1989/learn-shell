@@ -25,7 +25,7 @@ b=20
 # Local Variables
 # Variables declared in this script, can be accessed within this script only, because the default property is local
 # Variables declared in CLI, cannot be accessed in script
-echo $c
+echo c - $c
 # Declare a variable in CLI c=10, try to echo $c, but try to run the script having echo $c, we will not able to access the value
 # If we want access the variable, which is declared in CLI, we should convert the variable from local to  environment variable
 # In the CLI, type export c, and then run the script with echo $c, then we can see value 10
