@@ -18,6 +18,9 @@ source file_name
 #to know the path and script name
 dirname $0
 
+#to know the complete sript path
+realpath $0
+
 #Speial Arguments
 echo script name - $0
 echo first argument - $1
