@@ -1,9 +1,13 @@
-##What SED editor can do
-## -e is used, so that we can use multiple operations (sed -i -e '5d' -e '/nologin/ d' passwd)
+#What SED editor can do
+##SED is used in two ways
+## It only edits the file
+## It only edits the output
+## -e is used, so that we can use multiple operations in the same SED line (sed -i -e '5d' -e '/nologin/ d' passwd)
 
 Lines
 1.Delete some lines
- - Delete based on line number = sed -e '1d' /etc/passwd/ or sed -i -e '5d' passwd
+ - Delete based on line number = sed -e '1d' /etc/passwd/ It only edits the output and provide the output
+   or sed -i -e '5d' passwd It only edits the file and no output will be provided (using CAT command we should view the file)
  (Will not provide the out put)
  - Delete based on strings = sed -i -e '/nologin/ d' passwd
 2.Add some lines
@@ -14,7 +18,11 @@ Lines
 Words
 1.Delete some words
  - sed -i -e 's|bin||g' passwd
- ## g will replace all the instances of bin
- ## an give number instead of 'g' to delete the exact instance
+## | represents boundries, you can also boundries with (/,?,:,;,#,@)
+
 2.Modify(Substitute) some words
-- sed -i -e 's|bin|BIN|g' passwd
+- sed -i -e 's|bin|BIN|' passwd in this command in a line if there are two bin, it will replace only one bin to BIN
+- sed -i -e 's|bin|BIN|g' passwd in this command in a line if there are two bin, it will replace both the bin to BIN
+## g will replace all the instances of bin
+- sed -i -e 's|bin|BIN|2' passwd
+## any give number instead of 'g' it will delete the exact number of instance

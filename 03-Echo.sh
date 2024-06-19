@@ -1,4 +1,4 @@
-##Enable colours
+ ##Enable colours
 
 # Syntex - echo -e "\e[COLmMESSAGE\e[0m"
 # -e - which enables/makes \e(Enable  Color in echo command) to work
