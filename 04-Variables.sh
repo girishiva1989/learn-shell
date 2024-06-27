@@ -16,9 +16,11 @@ echo ARTH = ${ARTH}
 source file_name
 
 #to know the path and script name
+#dirname: gives the location of the script, but script name should be provided along with it
+#$0 gives the script name
 dirname $0
 
-#to know the complete sript path
+#to know the complete script path
 realpath $0
 
 #Speial Arguments
