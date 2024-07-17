@@ -6,8 +6,8 @@
 #2. Printing
 # Echo word
 # Word will be printed
-# We can print colo
-# We Can print multiple lines = echo -e "Line1\nLine2\Line3"
+# We can print color
+# We Can print multiple lines = echo -e "Line1\nLine2\nLine3"
 # We an print tab = echo -e "Line\tLine2"
 
 #3. Variables
@@ -45,8 +45,8 @@ echo c - $c
 
 #6. Loops
 # IF we want to execute same command again and again, then loops will be used
-#Expression based loop
-#Input based loop
+#Expression based loop - while
+#Input based loop - for
 
 #7. Functions
 # Refer function.sh
@@ -61,4 +61,13 @@ echo c - $c
 #if there is any special character in input to the command then we use quotes
 # Single quote - to print as it is we use single quotes (does not allow variables)
 # Double quote - to print along with variable substitution ( Allow variables)
-#10. SED Editor
+
+#10. Redirector
+# Input (<) output (>)
+# Input is two types
+# - Output > or -1>
+# - Error 2>
+# - Output + Error &>
+# Append >>, &>>
+
+#11. SED Editor

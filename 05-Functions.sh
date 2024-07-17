@@ -19,3 +19,15 @@ function_name1(){
 }
 
 function_name1 abc 123
+
+#Exit status in function
+#In function when you want to exit and return a status message then we use "return"
+
+fun_exit(){
+  echo 123
+  return 1
+  # 1 ia an exit status which ranges from 0-225
+}
+
+fun_exit
+echo exit status of function - $?
